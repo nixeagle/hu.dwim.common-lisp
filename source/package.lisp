@@ -18,5 +18,5 @@
 
 (dolist (package (package-use-list (find-package :hu.dwim.common-lisp)))
   (do-external-symbols (symbol package)
-    (unless (member symbol '(common-lisp:time common-lisp:set common-lisp:log))
+    (unless (member symbol '(common-lisp:time common-lisp:set))
       (export (list symbol)))))
