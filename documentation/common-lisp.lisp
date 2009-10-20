@@ -4,9 +4,9 @@
 ;;;
 ;;; See LICENCE for details.
 
-(in-package :hu.dwim.common-lisp.documentation)
+(in-package :hu.dwim.common.documentation)
 
-(def project :hu.dwim.common-lisp :path (system-pathname :hu.dwim.common-lisp))
+(def project :hu.dwim.common :path (system-pathname :hu.dwim.common))
 
 (def book user-guide (:title "User guide")
   (chapter (:title "Introduction")

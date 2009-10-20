@@ -6,9 +6,9 @@
 
 (in-package :common-lisp-user)
 
-(defpackage :hu.dwim.common-lisp.documentation
+(defpackage :hu.dwim.common.documentation
   (:use :hu.dwim.asdf
-        :hu.dwim.common-lisp
+        :hu.dwim.common
         :hu.dwim.def
         :hu.dwim.defclass-star
         :hu.dwim.syntax-sugar
