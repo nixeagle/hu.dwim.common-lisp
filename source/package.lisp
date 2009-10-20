@@ -47,7 +47,4 @@
  :filter (lambda (symbol)
            (not (member symbol hu.dwim.common::*common-lisp-symbols-absent-in-hu.dwim.common-lisp*))))
 
-(hu.dwim.common::reexport-exported-symbols-of-used-packages
- :hu.dwim.common
- :filter (lambda (symbol)
-           (not (member symbol hu.dwim.common::*common-lisp-symbols-absent-in-hu.dwim.common-lisp*))))
+(hu.dwim.common::export-exported-symbols-of-used-packages :hu.dwim.common)
