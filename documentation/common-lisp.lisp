@@ -4,19 +4,17 @@
 ;;;
 ;;; See LICENCE for details.
 
-(in-package :hu.dwim.common.documentation)
+(in-package :hu.dwim.common-lisp.documentation)
 
-(def project :hu.dwim.common :path (system-pathname :hu.dwim.common))
+(def project :hu.dwim.common-lisp :path (system-pathname :hu.dwim.common-lisp))
 
 (def book user-guide (:title "User guide")
   (chapter (:title "Introduction")
-    "TODO")
+    (paragraph ()
+      "TODO"))
   (chapter (:title "Supported Common Lisp Implementations")
     (paragraph ()
-      "SBCL"))
+      "This library contains portable code, so all Common Lisp implementations are supported."))
   (chapter (:title "Supported Operating Systems")
     (paragraph ()
-      "Linux"))
-  (chapter (:title "Tutorial")
-    (paragraph ()
-      "TODO")))
+      "This library contains portable code, so all Operating Systems are supported.")))

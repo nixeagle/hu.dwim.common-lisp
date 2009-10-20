@@ -16,4 +16,4 @@
   :licence "BSD / Public domain"
   :description "A redefinition of the standard Common Lisp package that includes a number of renames and shadows."
   :components ((:module "source"
-                :components ((:file "common-lisp")))))
+                :components ((:file "package")))))
