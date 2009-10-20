@@ -10,12 +10,13 @@
 
 (defsystem :hu.dwim.common-lisp.documentation
   :class hu.dwim.documentation-system
-  :author ("Attila Lendvai <attila.lendvai@gmail.com>"
-           "Levente Mészáros <levente.meszaros@gmail.com>"
+  :author ("Levente Mészáros <levente.meszaros@gmail.com>"
+           "Attila Lendvai <attila.lendvai@gmail.com>"
            "Tamás Borbély <tomi.borbely@gmail.com>")
   :licence "BSD / Public domain"
   :description "Documentation for hu.dwim.common-lisp"
   :depends-on (:hu.dwim.common-lisp
                :hu.dwim.wui)
   :components ((:module "documentation"
-                :components ((:file "package")))))
+                :components ((:file "common-lisp" :depends-on ("package"))
+                             (:file "package")))))
